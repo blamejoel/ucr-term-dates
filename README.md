@@ -13,8 +13,8 @@ The API call format is https://ucr-term-dates.appspot.com/[quarter]?year=[year]
 The response will be a json result in the format
 ```json
 {
-    "ins-end": "YYYYMMDD", 
-    "ins-start": "YYYYMMDD", 
+    "end": "YYYYMMDD", 
+    "start": "YYYYMMDD", 
     "term": "[quarter]", 
     "year": "[year]"
 }
@@ -25,15 +25,15 @@ https://ucr-term-dates.appspot.com/fall?year=2016
 will give a json response
 ```json
 {
-    "ins-end": "20161202", 
-    "ins-start": "20160922", 
+    "end": "20161202", 
+    "start": "20160922", 
     "term": "FALL", 
     "year": "2016"
 }
 ```
 
 An invalid request or a request for a term no listed on the UCR Academic 
-Calendar page will return `-1` for both `ins-end` and `ins-start`.
+Calendar page will return `-1` for both `end` and `start`.
 
 ### Known Issues
 This API will only scrape the UCR Academic Calendar print preview page. At the 
