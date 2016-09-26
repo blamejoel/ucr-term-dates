@@ -169,7 +169,7 @@ def find_end_date(soup):
 
 def convert_date(date_str):
     df = '%B %d, %Y'
-    do = '%Y%m%d'
+    do = '%Y-%m-%d'
     if date_str > 1 and bool(re.compile('\d').search(date_str)):
         return datetime.datetime.strptime(date_str, df).strftime(do)
     else:

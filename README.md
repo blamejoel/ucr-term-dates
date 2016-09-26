@@ -13,8 +13,8 @@ The API call format is https://ucr-term-dates.appspot.com/[quarter]?year=[year]
 The response will be a json result in the format
 ```json
 {
-    "end": "YYYYMMDD", 
-    "start": "YYYYMMDD", 
+    "end": "YYYY-MM-DD", 
+    "start": "YYYY-MM-DD", 
     "term": "[quarter]", 
     "year": "[year]"
 }
@@ -25,8 +25,8 @@ https://ucr-term-dates.appspot.com/fall?year=2016
 will give a json response
 ```json
 {
-    "end": "20161202", 
-    "start": "20160922", 
+    "end": "2016-12-02", 
+    "start": "2016-09-22", 
     "term": "FALL", 
     "year": "2016"
 }
